@@ -65,7 +65,7 @@ const rutFormat = (paramrut) => {
   let result = `${rut.slice(-4, -1)}-${rut.substr(rut.length - 1)}`;
 
   for (let i = 4; i < rut.length; i += 3) {
-    result = `${rut.slice(-3 - i, -i)}.${result}`;
+    result = `${rut.slice(-3 - i, -i)}${result}`;
   }
 
   return result;
